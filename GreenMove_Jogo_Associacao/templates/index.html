@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenMove - Associação Ambiental</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="top">
+      <div>
+        <span class="brand">🌱 GreenMove</span>
+        <h1>Desafio da Reciclagem</h1>
+        <p>Arraste cada resíduo para a lixeira correta.</p>
+      </div>
+      <div class="stats">
+        <div><strong id="score">0</strong><span>Pontos</span></div>
+        <div><strong id="progress">0/8</strong><span>Acertos</span></div>
+      </div>
+    </header>
+
+    <section class="board">
+      <div class="items-area">
+        <h2>♻️ Resíduos</h2>
+        <div id="items" class="items"></div>
+      </div>
+
+      <div class="bins-area">
+        <h2>🗑️ Onde descartar?</h2>
+        <div class="bins">
+          <div class="bin" data-type="papel"><div class="bin-icon">📘</div><b>Papel</b><small>Jornais e caixas</small></div>
+          <div class="bin" data-type="plastico"><div class="bin-icon">🧴</div><b>Plástico</b><small>Garrafas e embalagens</small></div>
+          <div class="bin" data-type="vidro"><div class="bin-icon">🍾</div><b>Vidro</b><small>Garrafas e potes</small></div>
+          <div class="bin" data-type="metal"><div class="bin-icon">🥫</div><b>Metal</b><small>Latas e metais</small></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="message" class="message">💡 Dica: toque ou clique em um resíduo e arraste até a categoria correta.</div>
+    <button id="restart" class="restart">Jogar novamente</button>
+  </main>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
